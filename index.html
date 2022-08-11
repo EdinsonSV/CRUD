@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="estilos.css">
+    <script defer src="main.js"></script>
+    <title>Ejercicio (Edinson 21/10/2021)</title>
+    <!--(C)reate, (R)ead, (U)pdate, (D)elete-->
+</head>
+<body>
+    <div class="container">
+        <h1>Registro de Trabajadores</h1>
+        <form>
+            <div class="form-group">
+                <label>Nombre</label>
+                <input type="text" class="form-control" name="nombre" required="" placeholder="Ingresar nombre" id="nombreid"/>
+            </div>
+            <div class="form-group">
+                <label>Email</label>
+                <input type="email" class="form-control" name="email" required="" placeholder="usuario@dominio" id="emailid"/>
+            </div>
+            <div class="form-group">
+                <label>Fecha de Nacimiento</label>
+                <input type="date" name="fechanacimiento" class="form-control" id="fechanacimiento" placeholder="dd/mm/aaaa"/>
+            </div>
+            <div class="form-group">
+                <label>Sexo</label>
+                <select class="form-select" name="sexo" id="Elegirsexo">
+                    <option selected>Sin especificar</option>
+                    <option value="Masculino">Masculino</option>
+                    <option value="Femenino">Femenino</option>
+                </select>
+            </div>
+            <button type="submit" class="btn btn-success save-btn" id="btn-enviar"><span>Guardar</span></button>
+        </form>
+    </div>
+    <table class="table table-bordered data-table" id="table">
+        <thead class="thead">
+            <tr>
+                <th>Nombre</th>
+                <th>Email</th>
+                <th>Fecha de Nacimiento</th>
+                <th>Sexo</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>                
+        <tbody>
+
+        </tbody>
+    </table>
+</body>
+</html>
